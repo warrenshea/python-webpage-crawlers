@@ -10,17 +10,16 @@ A Recursive Site Crawler built with Selenium/Python 2/chromedriver and using Bea
 * urlparse
 * selenium
 * xslxwriter
-
-source env/bin/activate
+* virtualenv -p python env
 
 ## Configure Crawler
 
 Modify the base, start_link, pattern_to_match variables in crawler.py
-virtualenv -p python env
 
 ## Run Crawler
 
-python crawler.py
+`source env/bin/activate`
+`python crawler.py`
 
 ## Contributors
 
