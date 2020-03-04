@@ -18,8 +18,10 @@ Modify the base, start_link, pattern_to_match variables in crawler.py
 
 ## Run Crawler
 
-`source env/bin/activate`
-`python crawler.py`
+```
+source env/bin/activate
+python crawler.py
+```
 
 ## Contributors
 
