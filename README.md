@@ -1,31 +1,35 @@
-# Recursive Site Crawler
+# Python Webpage Crawlers
 
-A Recursive Site Crawler built with Selenium/Python 2/chromedriver and using Beautiful Soup
+Various crawlers built with Selenium/Python 3/chromedriver and using Beautiful Soup to find information
 
 ## Prerequisites
 
-* Python 2 & pip
+* Python 3 & pip
 * chromedriver - https://chromedriver.chromium.org/downloads
 * beautifulsoup4 (Beautiful Soup 4)
-* urlparse
 * selenium
 * xslxwriter
-* virtualenv -p python env
 
-## Configure Crawler
+## find-details_linear_chromedriver.py
+>>> python find-details_linear_chromedriver.py
+Using a list of URLs, find needles (strings) among various page properties like canonical tags, alternatelang, anchors, pdfs, status codes, form attributes, iframe src tags
 
-Modify the base, start_link, pattern_to_match variables in crawler.py
+## find-urls-with-pattern_recursive_response.py
+>>> python find-urls-with-pattern_recursive_response.py
+Provide a starting URL and a URL pattern to match and it will crawl all links matching that pattern and list out all the anchors on the pages (unique + all)
 
-## Run Crawler
+## find-urls-with-pattern_recursive_chromedriver.py
+>>> python find-urls-with-pattern_recursive_chromedriver.py
+Provide a starting URL and a URL pattern to match and it will crawl all links matching that pattern and list out all the anchors on the pages (unique + all)
 
-```
-source env/bin/activate
-python crawler.py
-```
+## single-page-audit_chromedriver.py
+>>> python single-page-audit_chromedriver.py
+Lists out all the anchors and anchor details
 
 ## Contributors
 
 Warren Shea
 
 [warrenshea.com](http://www.warrenshea.com)
+[warrenshea.github.io](https://warrenshea.github.io)
 
